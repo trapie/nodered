@@ -1,0 +1,11 @@
+{
+    "name": "node-red-project",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "@fetchbot/node-red-contrib-ikea-home-smart": "~0.3.2",
+        "node-red-contrib-loxone": "~0.10.9",
+        "node-red-node-rbe": "~0.2.9"
+    }
+}

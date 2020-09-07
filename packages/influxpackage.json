@@ -1,0 +1,13 @@
+{
+    "name": "node-red-project",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "node-red-contrib-influxdb": "~0.4.1",
+        "node-red-contrib-loxone": "~0.10.9",
+        "node-red-contrib-neato-botvac": "~0.2.2",
+        "node-red-contrib-solaredge": "~0.1.0",
+        "node-red-node-rbe": "~0.2.9"
+    }
+}
