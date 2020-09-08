@@ -48,4 +48,4 @@ USER node-red
 #node $NODE_OPTIONS node_modules/node-red/red.js $FLOWS "--userDir" "/data"
 #HEALTHCHECK &{["CMD-SHELL" "node /healthcheck.js"] "0s" "0s" "0s" '\x00'}
 #ENTRYPOINT npm start --cache /data/.npm -- --userDir /data
-ENTRYPOINT ["npm" "start" "--cache" "/data/.npm" "--" "--userDir" "/data"]
+ENTRYPOINT ["npm", "start", "--cache", "/data/.npm", "--", "--userDir", "/data"]
