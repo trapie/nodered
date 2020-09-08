@@ -20,4 +20,5 @@ RUN npm audit fix
 
 #node-red-docker@1.1.3 start /usr/src/node-red
 #node $NODE_OPTIONS node_modules/node-red/red.js $FLOWS "--userDir" "/data"
-ENTRYPOINT ["npm" "start" "--cache" "/data/.npm" "--" "--userDir" "/data"]
+HEALTHCHECK &{["CMD-SHELL" "node /healthcheck.js"] "0s" "0s" "0s" '\x00'}
+ENTRYPOINT [npm start --cache /data/.npm -- --userDir /data]
