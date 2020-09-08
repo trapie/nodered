@@ -3,9 +3,9 @@ FROM nodered/node-red
 # Copy package.json to the WORKDIR so npm builds all
 # of your added nodes modules for Node-RED
 #USER root
-WORKDIR /data
-COPY package.json .
-RUN npm install --unsafe-perm --no-update-notifier --no-fund --only=production
+#WORKDIR /data
+#COPY package.json .
+#RUN npm install --unsafe-perm --no-update-notifier --no-fund --only=production
 #RUN npm install node-red-contrib-dwd-local-weather
 #RUN npm audit fix
 # Copy _your_ Node-RED project files into place
