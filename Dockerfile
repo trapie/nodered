@@ -18,4 +18,6 @@ RUN npm audit fix
 #WORKDIR /usr/src/node-red
 #RUN npm install node-red-node-smooth
 
-ENTRYPOINT 	npm start --cache /data/.npm -- --userDir /data
+#node-red-docker@1.1.3 start /usr/src/node-red
+#node $NODE_OPTIONS node_modules/node-red/red.js $FLOWS "--userDir" "/data"
+ENTRYPOINT ["npm" "start" "--cache" "/data/.npm" "--" "--userDir" "/data"]
