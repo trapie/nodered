@@ -18,3 +18,4 @@ RUN npm audit fix
 #WORKDIR /usr/src/node-red
 #RUN npm install node-red-node-smooth
 
+ENTRYPOINT 	npm start --cache /data/.npm -- --userDir /data
