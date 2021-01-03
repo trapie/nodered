@@ -31,7 +31,7 @@ FROM nodered/node-red
 #        "node-red-dashboard": "~2.23.2"
 # You should add extra nodes via your package.json file but you can also add them here:
 WORKDIR /usr/src/node-red
-RUN npm install node-red-contrib-dwd-local-weather@~0.1.9
+RUN npm install node-red-contrib-dwd-local-weather@~1.0.0
 RUN npm install node-red-contrib-gree-hvac@~0.1.3
 RUN npm install node-red-contrib-loxone@~0.10.11
 RUN npm install node-red-contrib-netatmo-dashboard@~0.5.2
@@ -42,7 +42,7 @@ RUN npm install node-red-contrib-neato-botvac@~0.2.2
 RUN npm install node-red-contrib-solaredge@~0.1.0
 RUN npm install node-red-contrib-boolean-logic-ultimate@~1.0.23
 RUN npm install node-red-contrib-sum@~0.1.1
-RUN npm install node-red-dashboard@~2.26.0
+RUN npm install node-red-dashboard@~2.26.1
 USER node-red
 #node-red-docker@1.1.3 start /usr/src/node-red
 #node $NODE_OPTIONS node_modules/node-red/red.js $FLOWS "--userDir" "/data"
