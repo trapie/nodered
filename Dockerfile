@@ -40,7 +40,7 @@ RUN npm install node-red-contrib-influxdb@~0.5.3
 RUN npm install node-red-contrib-harmony-websocket@~2.2.3
 RUN npm install node-red-contrib-neato-botvac@~0.2.2
 RUN npm install node-red-contrib-solaredge@~0.1.0
-RUN npm install node-red-contrib-boolean-logic-ultimate@~1.0.23
+RUN npm install node-red-contrib-boolean-logic-ultimate@~1.0.24
 RUN npm install node-red-contrib-sum@~0.1.1
 RUN npm install node-red-dashboard@~2.26.1
 USER node-red
