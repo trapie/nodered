@@ -36,7 +36,7 @@ RUN npm install node-red-contrib-gree-hvac@~0.1.3
 RUN npm install node-red-contrib-loxone@~0.10.11
 RUN npm install node-red-contrib-netatmo-dashboard@~0.5.2
 RUN npm install @fetchbot/node-red-contrib-ikea-home-smart@~0.3.2
-RUN npm install node-red-contrib-influxdb@~0.5.4
+RUN npm install node-red-contrib-influxdb@~0.6.0
 RUN npm install node-red-contrib-harmony-websocket@~2.2.6
 RUN npm install node-red-contrib-neato-botvac@~0.2.2
 RUN npm install node-red-contrib-solaredge@~0.1.0
