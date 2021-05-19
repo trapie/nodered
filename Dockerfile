@@ -42,7 +42,7 @@ RUN npm install node-red-contrib-neato-botvac@~0.2.2
 RUN npm install node-red-contrib-solaredge@~0.1.0
 RUN npm install node-red-contrib-boolean-logic-ultimate@~1.0.28
 RUN npm install node-red-contrib-sum@~0.1.1
-RUN npm install node-red-dashboard@~2.29.0
+RUN npm install node-red-dashboard@~2.29.1
 RUN npm install node-red-node-rbe@~0.5.0
 RUN npm install node-red-node-tail@~0.3.0
 USER node-red
