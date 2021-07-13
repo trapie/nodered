@@ -22,13 +22,13 @@ FROM nodered/node-red
 #        "node-red-contrib-loxone": "~0.10.10",
 #        "node-red-contrib-netatmo-dashboard": "~0.5.2",
 #        "node-red-node-rbe": "~0.2.9",
-#        "@fetchbot/node-red-contrib-ikea-home-smart": "~0.3.2",
+#        "@fetchbot/node-red-contrib-ikea-home-smart": "~0.3.3",
 #        "node-red-contrib-influxdb": "~0.4.1",
 #        "node-red-contrib-neato-botvac": "~0.2.2",
 #        "node-red-contrib-solaredge": "~0.1.0",
 #        "node-red-contrib-boolean-logic-ultimate": "~1.0.17",
 #        "node-red-contrib-sum": "~0.1.1",
-#        "node-red-dashboard": "~2.23.2"
+#        "node-red-dashboard": "~2.30.0"
 # You should add extra nodes via your package.json file but you can also add them here:
 WORKDIR /usr/src/node-red
 RUN npm install node-red-contrib-dwd-local-weather@~1.0.0
