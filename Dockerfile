@@ -34,7 +34,7 @@ WORKDIR /usr/src/node-red
 #RUN npm install node-red-contrib-dwd-local-weather@~1.0.0
 #RUN npm install node-red-contrib-gree-hvac@~0.1.3
 RUN npm install node-red-contrib-loxone@~0.10.12
-RUN npm install node-red-contrib-netatmo-dashboard@~0.5.2
+#RUN npm install node-red-contrib-netatmo-dashboard@~0.5.2
 #RUN npm install @fetchbot/node-red-contrib-ikea-home-smart@~0.3.2
 RUN npm install node-red-contrib-influxdb@~0.6.1
 #RUN npm install node-red-contrib-harmony-websocket@~2.2.6
@@ -45,9 +45,9 @@ RUN npm install node-red-contrib-sum@~0.1.1
 RUN npm install node-red-dashboard@~3.1.7
 RUN npm install node-red-node-rbe@~0.5.0
 RUN npm install node-red-node-tail@~0.3.2
-RUN npm install node-red-contrib-midea-hvac@~1.2.3
-RUN npm install node-red-contrib-tcc-honeywell@~0.0.1
-RUN npm install node-red-contrib-evohome@~1.1.2
+#RUN npm install node-red-contrib-midea-hvac@~1.2.3
+#RUN npm install node-red-contrib-tcc-honeywell@~0.0.1
+#RUN npm install node-red-contrib-evohome@~1.1.2
 USER node-red
 #node-red-docker@1.1.3 start /usr/src/node-red
 #node $NODE_OPTIONS node_modules/node-red/red.js $FLOWS "--userDir" "/data"
