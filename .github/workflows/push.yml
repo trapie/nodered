@@ -1,4 +1,4 @@
-name: ci
+name: build and push
 
 on:
   push:
@@ -28,6 +28,6 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v4
         with:
-          context: .
+          context: Dockerfile
           push: true
-          tags: user/app:latest
+          tags: trapie/nodered:latest
