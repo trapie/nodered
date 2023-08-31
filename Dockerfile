@@ -32,6 +32,7 @@ RUN apk update
 #        "node-red-dashboard": "~2.30.0"
 # You should add extra nodes via your package.json file but you can also add them here:
 WORKDIR /usr/src/node-red
+RUN npm install -g npm@9.8.1
 #RUN npm install node-red-contrib-dwd-local-weather@~1.0.0
 #RUN npm install node-red-contrib-gree-hvac@~0.1.3
 RUN npm install node-red-contrib-loxone
