@@ -1,4 +1,4 @@
-FROM oznu/oznu/homebridge
+FROM homebridge/homebridge
 
 # Copy package.json to the WORKDIR so npm builds all
 # of your added nodes modules for Node-RED
