@@ -50,6 +50,7 @@ RUN npm install node-red-contrib-influxdb
 RUN npm install node-red-contrib-oauth2
 RUN npm install node-red-contrib-miio-roborock
 RUN npm install node-red-contrib-evohome
+RUN npm install node-red-contrib-unifi
 RUN chown -hR node-red /data
 USER node-red
 ENV NODE_RED_ENABLE_PROJECTS=true
