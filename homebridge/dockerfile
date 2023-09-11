@@ -32,7 +32,8 @@ RUN apt update
 #        "node-red-dashboard": "~2.30.0"
 # You should add extra nodes via your package.json file but you can also add them here:
 #WORKDIR /usr/src/node-red
-RUN apt install ffmpeg ffmpeg-libs libpcap-dev
+#RUN apt install ffmpeg ffmpeg-libs libpcap-dev
+WORKDIR /homebridge
 RUN npm update
 RUN npm upgrade
 #npm install homebridge-hue 
@@ -49,5 +50,5 @@ ENV TZ=Europe/Budapest
 #HEALTHCHECK &{["CMD-SHELL", "node /healthcheck.js"], "0s", "0s", "0s", '\x00'}
 #ENTRYPOINT npm start --cache /data/.npm -- --userDir /data
 VOLUME [/homebridge]
-WORKDIR /homebridge
+
 ENTRYPOINT ["/init"]
