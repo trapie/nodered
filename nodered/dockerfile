@@ -47,12 +47,13 @@ RUN npm install node-red-contrib-influxdb
 #RUN npm install node-red-dashboard@~3.1.7
 #RUN npm install node-red-node-rbe@~0.5.0
 #RUN npm install node-red-node-tail@~0.3.2
-RUN npm install node-red-contrib-oauth2
+#RUN npm install node-red-contrib-oauth2
 RUN npm install node-red-contrib-miio-roborock
 RUN npm install node-red-contrib-evohome
 RUN npm install node-red-contrib-unifi
 #RUN npm install node-red-contrib-tahoma
 RUN npm install node-red-contrib-overkiz
+RUN npm install @rohmer/node-red-switchbot
 RUN chown -hR node-red /data
 USER node-red
 ENV NODE_RED_ENABLE_PROJECTS=true
