@@ -14,6 +14,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Install Ansible
+        run: pip install ansible
+      - name: Syntax check playbooks
+        run: |
+          if ls playbooks/*.yml 1> /dev/null 2>&1; then
+            for file in playbooks/*.yml; do
+              ansible-playbook --syntax-check "$file"
+            done
+          else
+            echo "No playbooks found."
+          fi
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
       - name: Set up Docker Buildx
